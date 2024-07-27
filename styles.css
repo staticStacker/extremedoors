@@ -45,6 +45,14 @@ svg {
     background-size: cover;
     color: var(--text1);
 }
+.header-thanks {
+    height: 40rem;
+    background-image: url("./media/img8.jpeg");
+    font-family: "Fjalla One", sans-serif;
+    background-position: center center;
+    background-size: cover;
+    color: var(--text1);
+}
 .nav-wrapper {
     display: block;
     background-color: #1C1C1C;
