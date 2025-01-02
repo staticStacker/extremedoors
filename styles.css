@@ -55,15 +55,17 @@ svg {
 }
 .nav-wrapper {
     display: block;
-    background-color: #000;
+    /*background-color: #000;*/
 }
 .static-nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: "Martel Sans", sans-serif;
     max-width: 100rem;
     height: 80px;
+    margin-left: calc(12% + 175px);
+    margin-right: 12%;
 } 
 .social {
     display: flex;
@@ -188,3 +190,64 @@ svg {
       background-blend-mode: screen, overlay;
     }
 }
+
+.garage-door {
+    transition: transform 3s ease-in-out;
+    transform: translateY(0);
+}
+.garage-door.open {
+    transform: translateY(-100%);
+}
+.logo {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+.logo.visible {
+    opacity: 1;
+}
+.content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.content.visible {
+    opacity: 1;
+}
+/* Floating Buttons */
+#floating-buttons {
+    transition: transform 1s ease;
+    transform: translateY(-100%);
+    z-index: 3;
+}
+#floating-buttons.visible {
+    transform: translateY(0);
+}
+#scroll-to-top {
+    transition: transform 1s ease;
+    transform: translateX(200%);
+}
+#scroll-to-top.visible {
+    transform: translateY(0);
+}
+
+/* FAQ */
+.qa-item {
+    transition: all 0.3s ease-in-out;
+  }
+  .qa-item.active .qa-answer {
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .qa-answer {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  .qa-icon {
+    transition: transform 0.3s ease-in-out;
+  }
+  .qa-item.active .qa-icon {
+    transform: rotate(180deg);
+  }
