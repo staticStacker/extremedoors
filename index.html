@@ -21,11 +21,26 @@
     </script>
   </head>
   <body>
+    <div id="garageDoor" class="garage-door bg-zinc-950 fixed inset-0 z-50 flex flex-col justify-evenly items-center w-full">
+        <div class="w-[30%] h-[17.5%] border-8 border-neutral-50 bg-sky-800 ml-16 mr-auto"></div>
+        <div class="w-full h-1 bg-zinc-900"></div>
+        <div class="w-[30%] h-[17.5%] border-8 border-neutral-50 bg-sky-800 ml-16 mr-auto"></div>
+        <div class="w-full h-1 bg-zinc-900"></div>
+        <div class="w-[30%] h-[17.5%] border-8 border-neutral-50 bg-sky-800 ml-16 mr-auto"></div>
+        <div class="w-full h-1 bg-zinc-900"></div>
+        <div class="w-[30%] h-[17.5%]"></div>
+        <!--div id="logo" class="logo absolute inset-0 flex items-center justify-center">
+            <img src="./media/extremedoors.jpg" alt="Background Image" class="object-fit w-[250px]" />
+        </div-->
+    </div>
     <section id="home">
         <div class="header-wrapper">
-            <div class="nav-wrapper">
+            <div class="nav-wrapper z-30">
                 <center>
-                <div class="static-nav">
+                <a href="./index.html" class="z-10 absolute flex w-[150px] w-[88%] ml-[12%]">
+                    <img src="./media/extremedoors.jpg" alt="Background Image" class="object-fit w-[150px]" />
+                </a>
+                <div class="static-nav z-30">
                     <div class="flex flex-col md:flex-row">
                         <a href="https://www.google.com/maps/@35.0758182,-82.1284416,10.25z" target="_blank">
                             <div class="social" style="margin-right: 10px;">
@@ -44,11 +59,11 @@
                             </div>
                         </a>
                     </div>
-                    <div class="flex flex-row">
+                    <div class="flex flex-row hidden sm:flex">
                         <a href="https://www.instagram.com/extremedoorsllc/">
                             <div class="social w-[40px] h-[40px]">
                                 <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                                 </div>
                             </div>
                         </a>
@@ -61,22 +76,33 @@
                         </a>
                     </div>
                 </div>
-                <div class="nav">
-
-                </div>
                 </center>
             </div>
-            <div class="w-[88%] ml-[12%]">
-                <a href="./index.html" class="z-40 relative flex w-[150px]">
-                    <img src="./media/extremedoors.jpg" alt="Background Image" class="object-fit w-[150px]" />
-                </a>
-            </div>
-            <div class="header">
+            <div class="header" id="hero">
                 <div class="heading">
-                    <h1 style="font-size: 3.75rem; line-height: 1;">Extreme Doors</h1>
+                    <h1 class="uppercase" style="font-size: 3.75rem; line-height: 1; ">Extreme Doors</h1>
                     <p style="font-size: 1.25rem; line-height: 1.75rem; margin: 0; font-family: 'Martel Sans', sans-serif;">Expert Garage Door Services</p>
                     <a href="#contact" class="free-estimate-button">Get a Free Estimate</a>
                 </div>
+            </div>
+        </div>
+        <div id="floating-buttons" class="fixed top-0 left-0 right-0 z-20 flex flex-col">
+            <div class="bg-black shadow-md flex flex-col sm:flex-row justify-center height-[80px] p-4 gap-2">
+                <a href="#contact" class="inline-flex h-10 items-center justify-center rounded-md bg-[#F30402] px-6 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-[#F30402]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-4 w-4"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Get in Touch
+                </a>
+                <a href="#services" class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-6 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50">
+                    View Services
+                </a>
+                <a href="tel:+18649094860" class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-6 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50">
+                    +1 (864) 909-4860
+                </a>
+            </div>
+            <div class="w-[88%] ml-[12%]">
+                <a href="./index.html" class="relative flex w-[150px]">
+                    <img src="./media/extremedoors.jpg" alt="Background Image" class="object-fit w-[150px]" />
+                </a>
             </div>
         </div>
     </section>
@@ -88,33 +114,33 @@
             </div>
             <div class="grid grids-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <div class="bg-card rounded-lg overflow-hidden shadow-md">
-                    <img src="./media/img9.jpeg" alt="Garage Door Installation" width="400" height="250" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 250; object-fit: cover;">
+                    <img src="./media/img9.jpeg" alt="Garage Installation" width="400" height="250" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 250; object-fit: cover;">
                     <div class="p-6 space-y-2">
                         <h3 class="text-xl font-bold">
-                            Garage Door Installation
+                            Garage Installation
                         </h3>
                         <p class="text-muted-foreground">We provide expert garage door installation services.</p>
-                        <a href="#contact" class="text-white inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">Learn More</a>
+                        <a href="#" class="text-white inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 pointer-events-none opacity-50">Learn More</a>
                     </div>
                 </div>
                 <div class="bg-card rounded-lg overflow-hidden shadow-md">
-                    <img src="./media/img5.jpeg" alt="Garage Door Installation" width="400" height="250" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 250; object-fit: cover;">
+                    <img src="./media/img5.jpeg" alt="Garage Installation" width="400" height="250" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 250; object-fit: cover;">
                     <div class="p-6 space-y-2">
                         <h3 class="text-xl font-bold">
-                            Garage Door Replacement
+                            Garage Replacement
                         </h3>
-                        <p class="text-muted-foreground">Let us change your garage door or your a broken panel.</p>
-                        <a href="#contact" class="text-white inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">Learn More</a>
+                        <p class="text-muted-foreground">Let us change your garage door or your broken panel.</p>
+                        <a href="#" class="text-white inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 pointer-events-none opacity-50">Learn More</a>
                     </div>
                 </div>
                 <div class="bg-card rounded-lg overflow-hidden shadow-md">
-                    <img src="./media/img.jpeg" alt="Garage Door Installation" width="400" height="250" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 250; object-fit: cover;">
+                    <img src="./media/img.jpeg" alt="Garage Installation" width="400" height="250" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 250; object-fit: cover;">
                     <div class="p-6 space-y-2">
                         <h3 class="text-xl font-bold">
-                            Garage Door Repair
+                            Garage Repair
                         </h3>
                         <p class="text-muted-foreground">We fix broken parts and issues with the doors, springs, or sensors.</p>
-                        <a href="#contact" class="text-white inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">Learn More</a>
+                        <a href="#" class="text-white inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 pointer-events-none opacity-50">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -142,7 +168,7 @@
                 <div class="bg-card rounded-lg p-6 space-y-4 shadow-md">
                     <div class="flex items-center gap-4">
                         <div class="bg-primary rounded-full p-3 text-primary-foreground">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
                               <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                               <polyline points="9 22 9 12 15 12 15 22"></polyline>
                             </svg>
@@ -166,6 +192,109 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="py-12">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+              <div class="space-y-2">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center">Frequently Asked Questions</h2>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                  <div class="space-y-6">
+                      <div class="qa-item bg-white rounded-lg shadow-md overflow-hidden border">
+                          <button class="qa-question w-full text-left px-6 py-4 focus:outline-none">
+                              <div class="flex justify-between items-center">
+                                  <span class="font-medium text-gray-900">How long do garage doors typically last?</span>
+                                  <svg class="qa-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                              </div>
+                          </button>
+                          <div class="qa-answer px-6 pb-4">
+                              <p class="text-gray-600">A well-maintained garage door can last 15-30 years, depending on the material and frequency of use. Regular servicing, lubrication of moving parts, and timely repairs will help extend its lifespan.</p>
+                          </div>
+                      </div>
+                      <div class="qa-item bg-white rounded-lg shadow-md overflow-hidden border">
+                          <button class="qa-question w-full text-left px-6 py-4 focus:outline-none">
+                              <div class="flex justify-between items-center">
+                                  <span class="font-medium text-gray-900">What are the most common types of garage doors?</span>
+                                  <svg class="qa-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                              </div>
+                          </button>
+                          <div class="qa-answer px-6 pb-4">
+                              <p class="text-gray-600">There are four main types of garage doors: sectional, roll-up, side-hinged, and tilt-up. Sectional garage doors are the most popular due to their durability and ease of use. Roll-up doors are compact and ideal for smaller spaces, while side-hinged doors offer a classic, swing-open design. Tilt-up doors provide a one-panel solution that lifts outward and upward.</p>
+                          </div>
+                      </div>
+                      <div class="qa-item bg-white rounded-lg shadow-md overflow-hidden border">
+                          <button class="qa-question w-full text-left px-6 py-4 focus:outline-none">
+                              <div class="flex justify-between items-center">
+                                  <span class="font-medium text-gray-900">How much does a garage door installation cost?</span>
+                                  <svg class="qa-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                              </div>
+                          </button>
+                          <div class="qa-answer px-6 pb-4">
+                              <p class="text-gray-600">The cost of installing a garage door varies widely based on the door's material, size, and features. On average, you can expect to pay between $700 and $2,500. Premium options like insulated doors or smart garage door openers may increase the price.</p>
+                          </div>
+                      </div>
+                      <div class="qa-item bg-white rounded-lg shadow-md overflow-hidden border">
+                          <button class="qa-question w-full text-left px-6 py-4 focus:outline-none">
+                              <div class="flex justify-between items-center">
+                                  <span class="font-medium text-gray-900">How often should I service my garage door?</span>
+                                  <svg class="qa-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                              </div>
+                          </button>
+                          <div class="qa-answer px-6 pb-4">
+                              <p class="text-gray-600">Garage doors should be serviced at least once a year to ensure smooth operation and prevent major repairs. It is often required to lubricate moving parts every 6 months.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="space-y-6">
+                      <div class="qa-item bg-white rounded-lg shadow-md overflow-hidden border">
+                          <button class="qa-question w-full text-left px-6 py-4 focus:outline-none">
+                              <div class="flex justify-between items-center">
+                                  <span class="font-medium text-gray-900">Why does my garage door make loud noises?</span>
+                                  <svg class="qa-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                              </div>
+                          </button>
+                          <div class="qa-answer px-6 pb-4">
+                              <p class="text-gray-600">Loud noises may be caused by loose hardware, worn rollers, or lack of lubrication. Check and tighten bolts and hinges, and lubricate moving parts with a silicone-based lubricant. If the problem persists, it’s best to call a professional.</p>
+                          </div>
+                      </div>
+                      <div class="qa-item bg-white rounded-lg shadow-md overflow-hidden border">
+                          <button class="qa-question w-full text-left px-6 py-4 focus:outline-none">
+                              <div class="flex justify-between items-center">
+                                  <span class="font-medium text-gray-900">Can I replace just one panel of my garage door?</span>
+                                  <svg class="qa-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                              </div>
+                          </button>
+                          <div class="qa-answer px-6 pb-4">
+                              <p class="text-gray-600">Yes, in many cases, you can replace a single damaged panel instead of the entire door. However, the availability of replacement panels depends on the door’s model and age. Consult the manufacturer or us professionals for assistance.</p>
+                          </div>
+                      </div>
+                      <div class="qa-item bg-white rounded-lg shadow-md overflow-hidden border">
+                          <button class="qa-question w-full text-left px-6 py-4 focus:outline-none">
+                              <div class="flex justify-between items-center">
+                                  <span class="font-medium text-gray-900">Can you handle both large and small projects?</span>
+                                  <svg class="qa-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                              </div>
+                          </button>
+                          <div class="qa-answer px-6 pb-4">
+                              <p class="text-gray-600">Absolutely. We work on projects of all sizes, from small residential jobs to large-scale commercial jobs.</p>
+                          </div>
+                      </div>
+                      <div class="qa-item bg-white rounded-lg shadow-md overflow-hidden border">
+                          <button class="qa-question w-full text-left px-6 py-4 focus:outline-none">
+                              <div class="flex justify-between items-center">
+                                  <span class="font-medium text-gray-900">Are smart garage door openers worth it?</span>
+                                  <svg class="qa-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                              </div>
+                          </button>
+                          <div class="qa-answer px-6 pb-4">
+                              <p class="text-gray-600">Yes, smart garage door openers add convenience and security. They allow you to control your garage door remotely through a smartphone app, receive alerts if the door is left open, and integrate with smart home systems like Amazon Alexa or Google Assistant.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </section>
     <section id="contact">
         <div class="relative w-full h-[130vh] lg:h-screen overflow-hidden">
             <img src="" alt="Background Image" class="flannel-effect object-none w-full h-full " />
@@ -187,11 +316,11 @@
                 <div class="max-w-md p-6 sm:p-8 md:p-10 bg-white rounded-lg shadow-lg">
                     <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
                     <p class="text-muted-foreground mb-6">Fill out the form below and we'll get back to you as soon as possible.</p>
-                    <form class="grid grid-cols-1 lg:grid-cols-2 gap-6" action="https://formsubmit.co/mail@extremedoorsllc.com" method="POST">
+                    <form class="grid grid-cols-1 lg:grid-cols-2 gap-6" action="https://formsubmit.co/nineadvise@gmail.com" method="POST">
                     <input type="hidden" name="_subject" value="Hey Difort! New Submission">
                     <input type="text" name="_honey" style="display:none">
                     <input type="hidden" name="_autoresponse" value="We received your message, we will get back with you soon!">
-                    <input type="hidden" name="_next" value="https://extremedoorsllc.com/thanks.html">
+                    <!--input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"-->
                     <div class="space-y-2">
                         <label
                         class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -314,7 +443,7 @@
         <div class="w-full">
             <div class="text-center space-y-4 mb-8">
                 <h2 class="text-3xl md:text-4xl font-bold">What Our Customers Say</h2>
-                <p class="text-muted-foreground">Hear from our satisfied customers about their experience with our garage door services.</p>
+                <p class="text-muted-foreground">Hear from our satisfied customers about their experience with our garage services.</p>
             </div>
             <div class="relative w-full" role="region">
                 <div class="overflow-hidden">
@@ -439,7 +568,7 @@
     <footer class="flex justify-center text-muted-foreground">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div class="flex flex-col gap-4">
-            <a class="flex items-center gap-2" href="./index.html#home">
+            <a class="flex items-center gap-2" href="#home">
               <span class="text-xl font-bold">Extreme Doors</span>
             </a>
             <div class="flex flex-col gap-2 text-sm">
@@ -501,31 +630,31 @@
           <div class="grid grid-cols-2 gap-8">
             <div class="grid gap-2">
               <h3 class="text-lg font-semibold">Services</h3>
-              <a class="text-sm hover:underline" href="./index.html#services">
+              <a class="text-sm hover:underline" href="#services">
                 Garage Door Installation
               </a>
-              <a class="text-sm hover:underline" href="./index.html#services">
+              <a class="text-sm hover:underline" href="#services">
                 Garage Door Replacement
               </a>
-              <a class="text-sm hover:underline" href="./index.html#services">
+              <a class="text-sm hover:underline" href="#services">
                 Garage Door Maintenance
               </a>
-              <a class="text-sm hover:underline" href="./index.html#services">
+              <a class="text-sm hover:underline" href="#services">
                 Other
               </a>
             </div>
             <div class="grid gap-2">
               <h3 class="text-lg font-semibold">About</h3>
-              <a class="text-sm hover:underline" href="./index.html#services">
+              <a class="text-sm hover:underline" href="#">
                 Our Company
               </a>
-              <a class="text-sm hover:underline" href="./index.html#services">
+              <a class="text-sm hover:underline" href="#">
                 Our Team
               </a>
-              <a class="text-sm hover:underline" href="./index.html#services">
+              <a class="text-sm hover:underline" href="#">
                 Our History
               </a>
-              <a class="text-sm hover:underline" href="./index.html#contact">
+              <a class="text-sm hover:underline" href="#">
                 Contact Us
               </a>
             </div>
@@ -533,19 +662,26 @@
           <div class="flex flex-col gap-4 justify-end">
             <p class="text-sm">© 2024 ExtremeDoorsLLC. All rights reserved</p>
             <div class="flex gap-4">
-              <a class="text-sm hover:underline" href="./index.html">
+              <a class="text-sm hover:underline" href="#">
                 Privacy Policy
               </a>
-              <a class="text-sm hover:underline" href="./index.html">
+              <a class="text-sm hover:underline" href="#">
                 Terms of Service
               </a>
             </div>
-            <a class="text-sm hover:underline" href="mailto:nineadvise@gmail.com">
+            <a class="text-sm hover:underline" href="#">
                 Made by MadeModern
             </a>
           </div>
         </div>
     </footer>
+    <button id="scroll-to-top" class="fixed bottom-4 right-4 p-2 rounded-md text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white border border-gray-200">
+        <span class="sr-only">Scroll to top</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
     </section>
     <script src="./index.js"></script>
   </body>
